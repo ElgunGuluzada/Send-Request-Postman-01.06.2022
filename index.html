@@ -13,17 +13,20 @@
 <body>
     <div class="container mt-5">
         <div class="row">
-            <input id="input" type="text">
+            <input id="input" value="London" placeholder="Search City" type="text">
             <button id="cBtn" class="btn btn-info mx-4">C</button>
             <button id="fBtn" class="btn btn-info">F</button>
             <button id="searchBtn" class="btn btn-success ml-5">Search</button>
         </div>
-        <div id="content" class="Content mt-5">
-            <div>City: <span id="city"></span></div>
-            <div>Country: <span id="country"></span></div>
-            <div>Weather Forecast: <span id="weather"></span></div>
-            <div>Sky Condition: <span id="condition"></span></div>
-
+        <div id="error" style="color: red;" class="d-none mt-3 fw-2">Not Found !</div>
+        <div id="content" class="Content mt-3">
+            <div id="Info">
+                <div>City: <span id="city"></span></div>
+                <div>Country: <span id="country"></span></div>
+                <div>Weather Forecast: <span id="weather"></span></div>
+                <div>Local Time: <span id="localTime"></span></div>
+                <!-- <div>Sky Condition: <span id="condition"></span></div> -->
+            </div>
         </div>
     </div>
 </body>
